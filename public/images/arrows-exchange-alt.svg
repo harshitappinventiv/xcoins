@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__arrows-exchange-alt" width="24.092" height="17.488" viewBox="0 0 24.092 17.488">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#919fb2}
+        </style>
+    </defs>
+    <path id="prefix__Path_1901" d="M5.5 13.451a1.5 1.5 0 0 1-.8-2.78l4.042-4.043a1.5 1.5 0 1 1 2.127 2.128l-1.686 1.686h11.358a1.5 1.5 0 0 1 0 3.009H5.5z" class="prefix__cls-1" data-name="Path 1901" transform="translate(-3.993 -6.188)"/>
+    <path id="prefix__Path_1902" d="M24.555 12.984a1.5 1.5 0 0 1 .8 2.78l-4.043 4.043a1.5 1.5 0 0 1-2.128-2.127l1.687-1.687H9.512a1.5 1.5 0 0 1 0-3.009h15.043z" class="prefix__cls-1" data-name="Path 1902" transform="translate(-1.968 -2.76)"/>
+</svg>

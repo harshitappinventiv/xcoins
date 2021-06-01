@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.367" height="38.765" viewBox="0 0 24.367 38.765">
+    <defs>
+        <style>
+            .cls-1{fill:#b5b5b5;fill-rule:evenodd}
+        </style>
+    </defs>
+    <g id="pobrane" transform="translate(-28 -1)">
+        <g id="Group_3727" transform="translate(28 1)">
+            <path id="Path_13030" d="M30.215 13.186v14.393a9.968 9.968 0 1 0 19.936 0V13.186a9.968 9.968 0 1 0-19.936 0zm-2.215 0a12.183 12.183 0 1 1 24.367 0v14.393a12.183 12.183 0 1 1-24.367 0V13.186z" class="cls-1" transform="translate(-28 -1)"/>
+            <path id="Path_13031" d="M48 16.112a1.108 1.108 0 1 1 2.215 0v4.421a1.108 1.108 0 1 1-2.215 0z" class="cls-1" transform="translate(-36.924 -7.247)"/>
+        </g>
+    </g>
+</svg>

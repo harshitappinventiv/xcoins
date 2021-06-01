@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900|Rubik:300,400,500,700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #fff !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ? variables */
+:root {
+  --white: #fff;
+  --black: #000;
+  --light-lime-green: rgba(103, 194, 6, 0.3);
+  --dark-lime-green: #86c306;
+  --green-blue: #00b178;
+
+  /* *** maxWidth */
+  --max-width: 1196px;
+
+  /* ***  linear gradient*/
+  --header-linear-gradient: linear-gradient(
+    to bottom,
+    #f6fcff 100%,
+    #ffffff 0%
+  );
+  --mobile-header-linear-gradient: linear-gradient(
+    to bottom,
+    #f6fcff,
+    #ffffff 96%
+  );
+  --footer-linear-gradient: linear-gradient(to right, #f5fcff, #ffffff);
+
+  /* * box shadow */
+  --signup-box-shadow: 0 2px 4px 0 rgba(0, 156, 222, 0.3);
+  --buy-bitcoins-box-shadow: 0 10px 20px 0 rgba(37, 119, 167, 0.07);
+  --buy-bitcoins-box-shadow-green-color: 0 2px 4px 0 rgba(103, 194, 6, 0.3);
+  --trusted-customer-box-shadow: 0 10px 20px 0 rgba(37, 119, 167, 0.07);
+}

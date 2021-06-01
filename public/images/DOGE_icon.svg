@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="84" viewBox="0 0 84 84">
+  <defs>
+    <clipPath id="clip-DOGE_icon">
+      <rect width="84" height="84"/>
+    </clipPath>
+  </defs>
+  <g id="DOGE_icon" clip-path="url(#clip-DOGE_icon)">
+    <g id="dogecoin" transform="translate(1 1)">
+      <path id="Path_6" data-name="Path 6" d="M886.883,659H881.12v11.361h9.067v4.757H881.12v11.361h6.045c1.553,0,12.752.175,12.734-13.218S889.038,659,886.883,659Z" transform="translate(-844.816 -631.754)" fill="#ccd4e1"/>
+      <path id="Path_7" data-name="Path 7" d="M41,0A41,41,0,1,0,82,41,41,41,0,0,0,41,0Zm1.611,63.144H27.763V43.4H22.529V38.569h5.234V18.828H40.506c3.015,0,22.983-.626,22.983,22.529,0,23.538-20.878,21.788-20.878,21.788Z" fill="#ccd4e1"/>
+    </g>
+  </g>
+</svg>
