@@ -6,6 +6,10 @@ import { useTranslation } from "next-i18next";
 import BuyBitcoin from "../components/BuyBitcoin";
 import CoinImg from "../components/CoinImg";
 import TrustedCustomer from "../components/TrustedCustomer";
+import WhyAndHow from "../components/reuseComponent/whyAndHow";
+
+//  ? ******************************** images ********************************
+import LocalImages from "../utils/images";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -26,6 +30,20 @@ function Home() {
       <BuyBitcoin />
       <CoinImg />
       <TrustedCustomer />
+      <WhyAndHow
+        heading={"why_xcoins_heading"}
+        imgOne={LocalImages.WHY_SING_UP}
+        imgTwo={LocalImages.WHY_INSTANT}
+        imgThree={LocalImages.WHY_SUPPORT}
+        subHeadingOne={"why_xcoins_subheading_one"}
+        subHeadingTwo={"why_xcoins_subheading_two"}
+        subHeadingThree={"why_xcoins_subheading_three"}
+        paragraphOne={"why_xcoins_paragraph_one"}
+        paragraphTwo={"why_xcoins_paragraph_two"}
+        paragraphThree={"why_xcoins_paragraph_three"}
+        // how
+        // howIcon={LocalImages.WORK_ARROW}
+      />
       <Typography variant="h1" className={classes.heading}>
         {t("under_development")}
       </Typography>

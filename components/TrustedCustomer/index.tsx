@@ -5,6 +5,7 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
+import { useTranslation } from "next-i18next";
 
 // ******************************** images and  icons ********************************
 import LocalImages from "../../utils/images";
@@ -44,7 +45,7 @@ const useStyles = makeStyles((theme: Theme) =>
     container: {
       maxWidth: "var(--max-width)",
       padding: theme.spacing(0, 1.5),
-      margin: theme.spacing(0, "auto", 5),
+      margin: theme.spacing(0, "auto"),
     },
     heading: {
       font: `normal ${theme.typography.fontWeightBold} ${theme.spacing(
@@ -169,6 +170,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 function TrustedCustomer() {
   const classes = useStyles();
+  const { t } = useTranslation();
   return (
     <>
       <div className={classes.backgroundImg}></div>
@@ -177,7 +179,7 @@ function TrustedCustomer() {
           <Grid container>
             <Grid item xs={12} sm={4}>
               <Typography variant="h6" className={classes.heading}>
-                Trusted by 1,300+ customers
+                {t("trusted_customer")}
               </Typography>
               <div className={classes.reviewDetailsDiv}>
                 <div className={classes.averageDiv}>
@@ -188,7 +190,7 @@ function TrustedCustomer() {
                     variant="body1"
                     className={classes.averageParagraph}
                   >
-                    Average (Excellent)
+                    {t("average_excelent")}
                   </Typography>
                 </div>
                 <div className={classes.middleLine}></div>
@@ -200,7 +202,7 @@ function TrustedCustomer() {
                     variant="body1"
                     className={classes.averageParagraph}
                   >
-                    Reviews in total
+                    {t("review_total")}
                   </Typography>
                 </div>
               </div>
@@ -217,9 +219,7 @@ function TrustedCustomer() {
                 <div>
                   <Typography variant="h6" className={classes.contentHeading}>
                     <span className={classes.headingArrow}>«</span>
-                    The customer support level is the best I've ever seen, and
-                    they're constantly adding new features and improving the
-                    existing ones.
+                    {t("support_heading_one")}
                     <span className={classes.headingArrow}>»</span>
                   </Typography>
                   <Typography variant="body1" className={classes.userName}>

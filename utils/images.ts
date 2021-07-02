@@ -17,6 +17,10 @@ const ETHEREUM_LOGO = "/images/ethereum.svg";
 const BCASH_LOGO = "/images/bcash.svg";
 const LITECOIN_LOGO = "/images/litecoin.svg";
 const Z_CASH = "/images/zcash.svg";
+const WHY_SING_UP = "/images/why_signup.svg";
+const WHY_INSTANT = "/images/why_instant.svg";
+const WHY_SUPPORT = "/images/why_support.svg";
+const WORK_ARROW = "/images/work-arrow.svg";
 
 const LocalImages = {
   LOGO,
@@ -38,6 +42,10 @@ const LocalImages = {
   BCASH_LOGO,
   LITECOIN_LOGO,
   Z_CASH,
+  WHY_SING_UP,
+  WHY_INSTANT,
+  WHY_SUPPORT,
+  WORK_ARROW,
 };
 
 export default LocalImages;
