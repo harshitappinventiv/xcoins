@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme: Theme) =>
     container: {
       maxWidth: "var(--max-width)",
       padding: theme.spacing(0, 1.5),
-      margin: theme.spacing(0, "auto"),
+      margin: theme.spacing(0, "auto", 5),
     },
     heading: {
       font: `normal ${theme.typography.fontWeightBold} ${theme.spacing(
@@ -112,7 +112,7 @@ const useStyles = makeStyles((theme: Theme) =>
         height: "100%",
         top: "3%",
         left: "2%",
-        backgroundColor: "pink",
+        // backgroundColor: "pink",
         boxShadow: "var(--trusted-customer-box-shadow)",
       },
       "&::after": {
@@ -124,8 +124,12 @@ const useStyles = makeStyles((theme: Theme) =>
         borderBottomRightRadius: 20,
         top: "6%",
         left: "4%",
-        backgroundColor: "green",
+        // backgroundColor: "green",
         boxShadow: "var(--trusted-customer-box-shadow)",
+      },
+      [theme.breakpoints.down("xs")]: {
+        height: "auto",
+        marginTop: theme.spacing(2),
       },
     },
     contentHeading: {
