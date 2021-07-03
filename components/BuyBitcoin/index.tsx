@@ -54,6 +54,9 @@ const useStyles = makeStyles((theme: Theme) =>
       [theme.breakpoints.down("sm")]: {
         textAlign: "center",
       },
+      [theme.breakpoints.down("xs")]: {
+        fontSize: theme.spacing(4),
+      },
     },
     subHeading: {
       font: `normal ${theme.typography.fontWeightRegular} ${theme.spacing(
@@ -65,6 +68,9 @@ const useStyles = makeStyles((theme: Theme) =>
       [theme.breakpoints.down("sm")]: {
         textAlign: "center",
         maxWidth: "100%",
+      },
+      [theme.breakpoints.down("xs")]: {
+        fontSize: theme.spacing(1.8),
       },
     },
     buyCoinsGrid: {
@@ -95,6 +101,9 @@ const useStyles = makeStyles((theme: Theme) =>
       )}px CircularStd, sans-serif`,
       color: "var(--black)",
       lineHeight: 1.67,
+      [theme.breakpoints.down("xs")]: {
+        fontSize: theme.spacing(2.2),
+      },
     },
     inputDiv: {
       margin: theme.spacing(1.5, 0),

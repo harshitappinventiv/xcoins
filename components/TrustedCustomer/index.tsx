@@ -53,6 +53,9 @@ const useStyles = makeStyles((theme: Theme) =>
       )}px CircularStd, sans-serif`,
       color: "var(--black)",
       lineHeight: 1.28,
+      [theme.breakpoints.down("xs")]: {
+        fontSize: theme.spacing(2.8),
+      },
     },
     reviewDetailsDiv: {
       display: "flex",
@@ -77,6 +80,9 @@ const useStyles = makeStyles((theme: Theme) =>
       )}px AkkuratPro, sans-serif`,
       color: theme.palette.secondary.main,
       lineHeight: 1.78,
+      [theme.breakpoints.down("xs")]: {
+        fontSize: theme.spacing(1.4),
+      },
     },
     middleLine: {
       width: 1,
@@ -139,6 +145,9 @@ const useStyles = makeStyles((theme: Theme) =>
       } ${theme.spacing(1.8)}px AkkuratPro, sans-serif`,
       color: theme.palette.secondary.main,
       lineHeight: 1.78,
+      [theme.breakpoints.down("xs")]: {
+        fontSize: theme.spacing(1.4),
+      },
     },
     headingArrow: {
       color: "var(--green-blue)",

@@ -43,6 +43,9 @@ const useStyles = makeStyles((theme: Theme) =>
       lineHeight: 1.28,
       textAlign: "center",
       marginBottom: theme.spacing(3),
+      [theme.breakpoints.down("xs")]: {
+        fontSize: theme.spacing(2.8),
+      },
     },
     gridItem: {
       display: "flex",
@@ -66,6 +69,9 @@ const useStyles = makeStyles((theme: Theme) =>
       )}px AkkuratPro, sans-serif`,
       color: "var(--black)",
       lineHeight: 1.8,
+      [theme.breakpoints.down("xs")]: {
+        fontSize: theme.spacing(1.8),
+      },
     },
     paragraph: {
       font: `normal  ${theme.typography.fontWeightRegular} ${theme.spacing(
@@ -74,12 +80,18 @@ const useStyles = makeStyles((theme: Theme) =>
       color: theme.palette.secondary.main,
       lineHeight: 1.78,
       textAlign: "center",
+      [theme.breakpoints.down("xs")]: {
+        fontSize: theme.spacing(1.4),
+      },
     },
     btn: {
       font: `normal ${theme.typography.fontWeightMedium} ${theme.spacing(
         1.8
       )}px AkkuratPro, sans-serif`,
       textTransform: "capitalize",
+      [theme.breakpoints.down("xs")]: {
+        fontSize: theme.spacing(1.4),
+      },
     },
   })
 );
