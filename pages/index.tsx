@@ -7,6 +7,7 @@ import BuyBitcoin from "../components/BuyBitcoin";
 import CoinImg from "../components/CoinImg";
 import TrustedCustomer from "../components/TrustedCustomer";
 import WhyAndHow from "../components/reuseComponent/whyAndHow";
+import ReferralProgram from "../components/referralProgram";
 
 //  ? ******************************** images ********************************
 import LocalImages from "../utils/images";
@@ -44,6 +45,7 @@ function Home() {
         // how
         // howIcon={LocalImages.WORK_ARROW}
       />
+      <ReferralProgram />
       <Typography variant="h1" className={classes.heading}>
         {t("under_development")}
       </Typography>

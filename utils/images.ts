@@ -21,6 +21,10 @@ const WHY_SING_UP = "/images/why_signup.svg";
 const WHY_INSTANT = "/images/why_instant.svg";
 const WHY_SUPPORT = "/images/why_support.svg";
 const WORK_ARROW = "/images/work-arrow.svg";
+const JOIN_PROGRAM = "/images/referral-top.svg";
+const WORDLD_CLASS_SUPPORT = "/images/sup-top.svg";
+const CHECK_GRENN = "/images/check-green.svg";
+const CHECK_PURPLE = "/images/check-purple.svg";
 
 const LocalImages = {
   LOGO,
@@ -46,6 +50,10 @@ const LocalImages = {
   WHY_INSTANT,
   WHY_SUPPORT,
   WORK_ARROW,
+  JOIN_PROGRAM,
+  WORDLD_CLASS_SUPPORT,
+  CHECK_GRENN,
+  CHECK_PURPLE,
 };
 
 export default LocalImages;

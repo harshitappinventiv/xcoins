@@ -76,8 +76,8 @@ const useStyles = makeStyles((theme: Theme) =>
       textAlign: "center",
     },
     btn: {
-      font: `normal ${theme.typography.fontWeightBold} ${theme.spacing(
-        1.2
+      font: `normal ${theme.typography.fontWeightMedium} ${theme.spacing(
+        1.8
       )}px AkkuratPro, sans-serif`,
       textTransform: "capitalize",
     },
@@ -107,7 +107,7 @@ function WhyAndHow({
         <Typography variant="h6" className={classes.heading}>
           {t(heading)}
         </Typography>
-        <Grid container spacing={2}>
+        <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={4} className={classes.gridItem}>
             <img src={imgOne} alt="img one" className={classes.img} />
             {how ? (
@@ -118,7 +118,11 @@ function WhyAndHow({
             <Typography variant="body1" className={classes.subHeading}>
               {t(subHeadingOne)}
             </Typography>
-            <Typography variant="body1" className={classes.paragraph}>
+            <Typography
+              variant="body1"
+              className={classes.paragraph}
+              gutterBottom
+            >
               {t(paragraphOne)}
             </Typography>
             {!how ? (
@@ -143,7 +147,11 @@ function WhyAndHow({
             <Typography variant="body1" className={classes.subHeading}>
               {t(subHeadingTwo)}
             </Typography>
-            <Typography variant="body1" className={classes.paragraph}>
+            <Typography
+              variant="body1"
+              className={classes.paragraph}
+              gutterBottom
+            >
               {t(paragraphTwo)}
             </Typography>
             {!how ? (
@@ -163,7 +171,11 @@ function WhyAndHow({
             <Typography variant="body1" className={classes.subHeading}>
               {t(subHeadingThree)}
             </Typography>
-            <Typography variant="body1" className={classes.paragraph}>
+            <Typography
+              variant="body1"
+              className={classes.paragraph}
+              gutterBottom
+            >
               {t(paragraphThree)}
             </Typography>
             {!how ? (
