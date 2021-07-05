@@ -29,8 +29,8 @@ const BUY_CRYPTO = "/images/buy-crypto.svg";
 const CREATE_WALLET = "/images/create-wallet.svg";
 const EXCHANGE_CURRENCY = "/images/exchange-currency.svg";
 const HOW_SIGNEUP = "/images/work-signup.svg";
-const BUY_TOKEN = "/images/work-signup.svg";
-const RECIEVE_TOKEN = "/images/work-signup.svg";
+const BUY_TOKEN = "/images/work-buytokens.svg";
+const RECIEVE_TOKEN = "/images/work-receivetokens.svg";
 
 const LocalImages = {
   LOGO,

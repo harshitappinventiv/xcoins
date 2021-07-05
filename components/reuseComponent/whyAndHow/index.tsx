@@ -54,6 +54,7 @@ const useStyles = makeStyles((theme: Theme) =>
       justifyContent: "center",
       flexDirection: "column",
       position: "relative",
+      textAlign: "center",
     },
     img: {
       minWidth: "24%",
