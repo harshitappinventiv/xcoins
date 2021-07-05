@@ -143,8 +143,8 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     gridItemBuyingBtn: {
+      textAlign: "center",
       [theme.breakpoints.down("xs")]: {
-        textAlign: "center",
         marginTop: theme.spacing(3),
       },
     },

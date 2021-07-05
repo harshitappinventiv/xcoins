@@ -25,6 +25,12 @@ const JOIN_PROGRAM = "/images/referral-top.svg";
 const WORDLD_CLASS_SUPPORT = "/images/sup-top.svg";
 const CHECK_GRENN = "/images/check-green.svg";
 const CHECK_PURPLE = "/images/check-purple.svg";
+const BUY_CRYPTO = "/images/buy-crypto.svg";
+const CREATE_WALLET = "/images/create-wallet.svg";
+const EXCHANGE_CURRENCY = "/images/exchange-currency.svg";
+const HOW_SIGNEUP = "/images/work-signup.svg";
+const BUY_TOKEN = "/images/work-signup.svg";
+const RECIEVE_TOKEN = "/images/work-signup.svg";
 
 const LocalImages = {
   LOGO,
@@ -54,6 +60,12 @@ const LocalImages = {
   WORDLD_CLASS_SUPPORT,
   CHECK_GRENN,
   CHECK_PURPLE,
+  BUY_CRYPTO,
+  CREATE_WALLET,
+  EXCHANGE_CURRENCY,
+  HOW_SIGNEUP,
+  BUY_TOKEN,
+  RECIEVE_TOKEN,
 };
 
 export default LocalImages;

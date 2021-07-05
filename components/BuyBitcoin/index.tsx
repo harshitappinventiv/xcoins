@@ -122,7 +122,10 @@ const useStyles = makeStyles((theme: Theme) =>
         color: "var(--black)",
         lineHeight: 1.33,
       },
-      "& .MuiInput-underline": {
+      "& .MuiInputBase-root.MuiInput-underline": {
+        "&:hover": {
+          borderBottom: "none",
+        },
         "&::before": {
           borderBottom: 0,
         },
@@ -143,11 +146,14 @@ const useStyles = makeStyles((theme: Theme) =>
       color: "var(--black)",
       lineHeight: 1.38,
       "&.MuiInput-underline": {
+        "&:hover": {
+          borderBottom: "none",
+        },
         "&::before": {
-          borderBottom: 0,
+          borderBottom: "none",
         },
         "&::after": {
-          borderBottom: 0,
+          borderBottom: "none",
         },
       },
     },

@@ -27,5 +27,21 @@
   "support_paragraph_three": "Multichannel: phone, email, chat",
   "start_buying_heading": "Start buying Bitcoin for free",
   "start_buying_paragraph": "We put the power in your hands to buy, sell and trade digital currency.",
-  "sing_up": "Sign Up"
+  "sing_up": "Sign Up",
+  "buy_crypto_heading": "Buy crypto with credit cards",
+  "buy_crypto_paragraph": "Xcoins provides you with quick and easy access to cryptocurrency, allowing you to buy Bitcoin, Ethereum, and Litecoin with your Visa or Mastercard debit and credit card.",
+  "buy_crypto_btn": "BUY CRYPTO",
+  "create_wallet_heading": "The Xcoins crypto wallet",
+  "create_wallet_paragraph": "Xcoins offers a secure and simple way to store your cryptocurrency in an online digital wallet. You can create your Xcoins crypto wallet today.",
+  "create_wallet_btn": "COMING SOON",
+  "exchange_currency_heading": "Exchange cryptocurrencies now",
+  "exchange_currency_paragraph": "Exchange your fiat for Bitcoin, or turn your Bitcoin into cash, using your Visa or Mastercard, credit or debit card.",
+  "exchange_currency_btn": "EXCHANGE CRYPTO",
+  "how_xcoins_heading": "How it works?",
+  "how_xcoins_subheading_one": "1. Sign up and get verified",
+  "how_xcoins_subheading_two": "2. Buy tokens",
+  "how_xcoins_subheading_three": "3. Receive tokens",
+  "how_xcoins_paragraph_one": "Just sign up, upload your ID doc and open your account today - it’s super quick.",
+  "how_xcoins_paragraph_two": "Select which tokens you would like to buy - we currently sell BTC, ETH and LTC.",
+  "how_xcoins_paragraph_three": "We will send tokens to your wallet within 15 minutes of payment approval."
 }

@@ -7,6 +7,7 @@ import {
   Button,
 } from "@material-ui/core";
 import { useTranslation } from "next-i18next";
+import clsx from "clsx";
 
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 
@@ -62,6 +63,9 @@ const useStyles = makeStyles((theme: Theme) =>
       position: "absolute",
       right: 0,
       top: 20,
+      [theme.breakpoints.down("xs")]: {
+        display: "none",
+      },
     },
     subHeading: {
       font: `normal  ${theme.typography.fontWeightBold} ${theme.spacing(
@@ -114,7 +118,7 @@ function WhyAndHow({
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={clsx(!how && classes.root)}>
       <div className={classes.container}>
         <Typography variant="h6" className={classes.heading}>
           {t(heading)}
