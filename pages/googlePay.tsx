@@ -1,9 +1,11 @@
 import GooglePayButton from "@google-pay/button-react";
+import Counter from "../feature/counter/counter";
 
 function GooglePay() {
   return (
     <div>
       <h1>Google pay </h1>
+      <Counter />
       <GooglePayButton
         environment="TEST"
         paymentRequest={{

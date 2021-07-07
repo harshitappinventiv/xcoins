@@ -1,4 +1,5 @@
 import React from "react";
+import { Provider } from "react-redux";
 import PropTypes from "prop-types";
 import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
@@ -8,6 +9,7 @@ import type { AppProps } from "next/app";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
 
+import store from "../app/store";
 // ******************************* next-18nNext ****************************
 import { appWithTranslation } from "next-i18next";
 
@@ -31,13 +33,15 @@ function MyApp(props: AppProps) {
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
       </Head>
-      <ThemeProvider theme={theme}>
-        <Layout>
-          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-          <CssBaseline />
-          <Component {...pageProps} />
-        </Layout>
-      </ThemeProvider>
+      <Provider store={store}>
+        <ThemeProvider theme={theme}>
+          <Layout>
+            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+            <CssBaseline />
+            <Component {...pageProps} />
+          </Layout>
+        </ThemeProvider>
+      </Provider>
     </React.Fragment>
   );
 }
