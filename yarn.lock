@@ -58,6 +58,13 @@
   resolved "https://registry.npmjs.org/@emotion/hash/-/hash-0.8.0.tgz"
   integrity sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
 
+"@google-pay/button-react@^2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@google-pay/button-react/-/button-react-2.4.1.tgz#d4fa2fe59863906d811fbaf3f21b7ef851f49115"
+  integrity sha512-hZA9TKsJtp6P4p9kur1xbk5KSbpZqqukSmO4LalyhG9r24DgQ6+nyAVoK+6eH4kCn4j3O814J1E9GMkyE9lP2w==
+  dependencies:
+    "@types/googlepay" "^0.6.1"
+
 "@hapi/accept@5.0.2":
   version "5.0.2"
   resolved "https://registry.npmjs.org/@hapi/accept/-/accept-5.0.2.tgz"
@@ -202,6 +209,11 @@
     redux "^4.1.0"
     redux-thunk "^2.3.0"
     reselect "^4.0.0"
+
+"@types/googlepay@^0.6.1":
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/@types/googlepay/-/googlepay-0.6.2.tgz#367906a987543cc646049a09e0f446538081455c"
+  integrity sha512-dXIQI0ECX4BJlurhVqH08bpY3bXhpLyen8t23cHUVTy+/rdZW5vOjg9qdiceI/GtVsd9f4ri4CLxSZ/YIWGCqw==
 
 "@types/hoist-non-react-statics@^3.3.1":
   version "3.3.1"
