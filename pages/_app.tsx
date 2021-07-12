@@ -7,13 +7,14 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../src/theme";
 import type { AppProps } from "next/app";
 import Layout from "../components/Layout";
+import { Provider as NextProvider } from "next-auth/client";
 import "../styles/globals.css";
 
 import store from "../app/store";
 // ******************************* next-18nNext ****************************
 import { appWithTranslation } from "next-i18next";
 
-function MyApp(props: AppProps) {
+const MyApp: any = (props: AppProps) => {
   const { Component, pageProps } = props;
 
   React.useEffect(() => {
@@ -33,18 +34,20 @@ function MyApp(props: AppProps) {
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
       </Head>
-      <Provider store={store}>
-        <ThemeProvider theme={theme}>
-          <Layout>
-            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            <CssBaseline />
-            <Component {...pageProps} />
-          </Layout>
-        </ThemeProvider>
-      </Provider>
+      <NextProvider session={pageProps.session}>
+        <Provider store={store}>
+          <ThemeProvider theme={theme}>
+            <Layout>
+              {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+              <CssBaseline />
+              <Component {...pageProps} />
+            </Layout>
+          </ThemeProvider>
+        </Provider>
+      </NextProvider>
     </React.Fragment>
   );
-}
+};
 
 MyApp.propTypes = {
   Component: PropTypes.elementType.isRequired,
