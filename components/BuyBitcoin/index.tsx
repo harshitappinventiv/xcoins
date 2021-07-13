@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   makeStyles,
   Theme,
@@ -14,6 +14,7 @@ import {
   Divider,
 } from "@material-ui/core";
 import { useTranslation } from "next-i18next";
+import Api from "../../utils/api";
 
 // ******************************* images and icons ****************************
 import LocalImages from "../../utils/images";
@@ -177,10 +178,27 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 function BuyBitcoin() {
-  const [currencyOne, setCurrencyOne] = useState("usd");
+  const [currencyOne, setCurrencyOne] = useState(1);
   const [currencyTwo, setCurrencyTwo] = useState("btc");
+  const [currencyList, setCurrencyList] = useState([]);
   const classes = useStyles();
   const { t } = useTranslation();
+
+  const getEndPoint = "/v1/coins?limit=10&page=1";
+
+  useEffect(() => {
+    Api.getApiCall(
+      getEndPoint,
+      "",
+      (response: any) => {
+        console.log(response?.data);
+        setCurrencyList(response.data);
+      },
+      (err: any) => {
+        console.log(err)
+      }
+    );
+  }, []);
 
   const handleCurrencyOneChange = (
     event: React.ChangeEvent<{ value: unknown }>
@@ -224,9 +242,11 @@ function BuyBitcoin() {
             value={currencyOne}
             onChange={handleCurrencyOneChange}
           >
-            <MenuItem value="usd">USD</MenuItem>
-            <MenuItem value="btc">BTC</MenuItem>
-            <MenuItem value="eur">EUR</MenuItem>
+            {currencyList?.map((item: any) => (
+              <MenuItem value={item.id} key={item.id}>
+                {item.coin_code}
+              </MenuItem>
+            ))}
           </Select>
         </Box>
       </div>

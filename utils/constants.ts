@@ -1,9 +1,10 @@
 import axios from "axios";
 
 export const instanceOfAxios = axios.create({
-  baseURL: `${process.env.REACT_APP_DOMAIN}`,
+  baseURL: `https://preprodapi.xcoins.eu/api`,
   timeout: 100000,
   headers: {
     "Content-Type": "application/json",
   },
+  
 });
