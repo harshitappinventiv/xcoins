@@ -178,9 +178,9 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 function BuyBitcoin() {
-  const [currencyOne, setCurrencyOne] = useState(1);
-  const [currencyTwo, setCurrencyTwo] = useState("btc");
-  const [currencyList, setCurrencyList] = useState([]);
+  const [currencyOne, setCurrencyOne] = useState("BTC");
+  const [currencyTwo, setCurrencyTwo] = useState("ETH");
+  const [currencyList, setCurrencyList] = useState<any>([]);
   const classes = useStyles();
   const { t } = useTranslation();
 
@@ -195,18 +195,18 @@ function BuyBitcoin() {
         setCurrencyList(response.data);
       },
       (err: any) => {
-        console.log(err)
+        console.log(err);
       }
     );
   }, []);
 
-  const handleCurrencyOneChange = (
-    event: React.ChangeEvent<{ value: unknown }>
-  ) => {};
+  const handleCurrencyOneChange = (event: any) => {
+    setCurrencyOne(event.target.value);
+  };
 
-  const handleCurrencyTwoChange = (
-    event: React.ChangeEvent<{ value: unknown }>
-  ) => {};
+  const handleCurrencyTwoChange = (event: any) => {
+    setCurrencyTwo(event.target.value);
+  };
 
   const inputCurrencyOne = () => (
     <div className={classes.inputDiv}>
@@ -221,8 +221,14 @@ function BuyBitcoin() {
               startAdornment: (
                 <InputAdornment position="start">
                   <img
-                    style={{ width: "50%" }}
-                    src={LocalImages.US_FLAG}
+                    style={{ width: "50px" }}
+                    src={
+                      !(currencyList.length > 0)
+                        ? LocalImages.US_FLAG
+                        : currencyList.filter(
+                            (item: any) => item.coin_code === currencyOne
+                          )[0]?.flag_image_name
+                    }
                     alt="us flag"
                   />
                 </InputAdornment>
@@ -243,7 +249,7 @@ function BuyBitcoin() {
             onChange={handleCurrencyOneChange}
           >
             {currencyList?.map((item: any) => (
-              <MenuItem value={item.id} key={item.id}>
+              <MenuItem value={item.coin_code} key={item.id}>
                 {item.coin_code}
               </MenuItem>
             ))}
@@ -266,8 +272,14 @@ function BuyBitcoin() {
               startAdornment: (
                 <InputAdornment position="start">
                   <img
-                    style={{ width: "75%" }}
-                    src="https://i.ibb.co/PFvK7cs/btc-icon-3x.png"
+                    style={{ width: "50px" }}
+                    src={
+                      !(currencyList.length > 0)
+                        ? LocalImages.US_FLAG
+                        : currencyList.filter(
+                            (item: any) => item.coin_code === currencyTwo
+                          )[0]?.flag_image_name
+                    }
                     alt="bit coin flag"
                   />
                 </InputAdornment>
@@ -287,9 +299,11 @@ function BuyBitcoin() {
             value={currencyTwo}
             onChange={handleCurrencyTwoChange}
           >
-            <MenuItem value="usd">USD</MenuItem>
-            <MenuItem value="btc">BTC</MenuItem>
-            <MenuItem value="eur">EUR</MenuItem>
+            {currencyList?.map((item: any) => (
+              <MenuItem value={item.coin_code} key={item.id}>
+                {item.coin_code}
+              </MenuItem>
+            ))}
           </Select>
         </Box>
       </div>
