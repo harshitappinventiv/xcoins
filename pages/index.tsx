@@ -31,13 +31,17 @@ function Home() {
       {!session && (
         <>
           Not signed in <br />
-          <Button onClick={() => signIn()}>Sign in</Button>
+          <Button color="primary" onClick={() => signIn()}>
+            Sign in
+          </Button>
         </>
       )}
 
       {session && (
         <>
-          <Button onClick={() => signOut()}>Sign out</Button>
+          <Button color="primary" onClick={() => signOut()}>
+            Sign out
+          </Button>
           <BuyBitcoin />
           <CoinImg />
           <TrustedCustomer />
